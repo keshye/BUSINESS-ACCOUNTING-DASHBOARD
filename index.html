@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Accounting</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Business Accounting Dashboard</h1>
+        </header>
+
+        <section class="input-section">
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" placeholder="Enter Product Name">
+
+            <label for="quality">Quality:</label>
+            <input type="number" id="quality" placeholder="Enter Quality">
+
+            <label for="price">Price per Unit:</label>
+            <input type="number" id="price" placeholder="Enter Price per Unit">
+
+            <label for="expenses">Total Expenses:</label>
+            <input type="number" id="expenses" placeholder="Enter Total Expenses">
+
+            <label for="taxRate">Tax Rate (%):</label>
+            <input type="number" id="taxRate" placeholder="Enter Tax Rate">
+
+            <button onclick="calculate()">Calculate</button>
+        </section>
+
+        <section class="results-section">
+            <h2>Results</h2>
+            <p><strong>Total Revenue:</strong> <span id="totalRevenue">0</span></p>
+            <p><strong>Profit:</strong> <span id="profit">0</span></p>
+            <p><strong>Loss:</strong> <span id="loss">0</span></p>
+            <p><strong>Tax:</strong> <span id="tax">0</span></p>
+            <p><strong>Net Profit After Tax:</strong> <span id="netProfit">0</span></p>
+        </section>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
